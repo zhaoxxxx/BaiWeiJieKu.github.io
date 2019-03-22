@@ -21,103 +21,103 @@ music-id: 2602106546
 
 ## 目前技术
 
-![](https://img-blog.csdnimg.cn/201903211703237.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m1.png)
 
 ## 为啥使用
 
-![](https://img-blog.csdnimg.cn/20190321170351181.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m2.png)
 
 ## maven简介
 
-![](https://img-blog.csdnimg.cn/20190321170414573.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m3.1.png)
 
-![](https://img-blog.csdnimg.cn/20190321170434215.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m3.2.png)
 
-![](https://img-blog.csdnimg.cn/20190321170448473.png)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m3.3.png)
 
-![](https://img-blog.csdnimg.cn/20190321170504157.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m3.4.png)
 
-![](https://img-blog.csdnimg.cn/2019032117051615.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m3.5.png)
 
 ## 安装
 
-![](https://img-blog.csdnimg.cn/20190321170539262.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m4.png)
 
-![](https://img-blog.csdnimg.cn/20190321170553653.png)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m4.2.png)
 
 ## 核心概念
 
-![](https://img-blog.csdnimg.cn/20190321170609964.png)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m5.png)
 
 ## 简单工程
 
-![](https://img-blog.csdnimg.cn/20190321170623154.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m6.png)
 
 ## 常用命令
 
-![](https://img-blog.csdnimg.cn/2019032117071454.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m7.png)
 
 ## 联网下载
 
-![](https://img-blog.csdnimg.cn/20190321170740905.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m8.png)
 
 ## POM
 
-![](https://img-blog.csdnimg.cn/20190321170800576.png)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m9.png)
 
 ## 坐标
 
-![](https://img-blog.csdnimg.cn/20190321170813618.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m10.png)
 
 ## 仓库
 
-![](https://img-blog.csdnimg.cn/20190321170827823.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m11.png)
 
 ## 初步依赖
 
-![](https://img-blog.csdnimg.cn/2019032117084374.png)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m12.png)
 
-![](https://img-blog.csdnimg.cn/20190321170858401.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m12.2.png)
 
-![](https://img-blog.csdnimg.cn/20190321170916314.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m12.3.png)
 
 ## 生命周期
 
-![](https://img-blog.csdnimg.cn/20190321170930769.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m13.png)
 
-![](https://img-blog.csdnimg.cn/20190321170948240.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m13.2.png)
 
 
 
 ## eclipse
 
-![](https://img-blog.csdnimg.cn/20190321171013294.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m14.png)
 
 ## 高级依赖
 
-![](https://img-blog.csdnimg.cn/2019032117103914.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m15.png)
 
-![](https://img-blog.csdnimg.cn/20190321171055151.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m15.2.png)
 
-![](https://img-blog.csdnimg.cn/20190321171109169.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m15.3.png)
 
-![](https://img-blog.csdnimg.cn/20190321171120393.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m15.4.png)
 
-![](https://img-blog.csdnimg.cn/20190321171135746.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m15.5.png)
 
 ## 继承
 
-![](https://img-blog.csdnimg.cn/20190321171403868.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m16.png)
 
-![](https://img-blog.csdnimg.cn/20190321171226769.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m16.2.png)
 
-![](https://img-blog.csdnimg.cn/20190321171242873.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m16.3.png)
 
 
 
 ## 聚合
 
-![](https://img-blog.csdnimg.cn/20190321171253986.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTI1NTM2,size_16,color_FFFFFF,t_70)
+![](https://raw.githubusercontent.com/BaiWeiJieKu/BaiWeiJieKu.github.io/master/images/m17.png)
 
 
 
