@@ -151,3 +151,110 @@ nums = [0,0,1,1,1,2,2,3,3,4]
 .
 ```
 
+
+
+### 移除元素2
+
+```
+给定一个数组 nums 和一个值 val，你需要原地移除所有数值等于 val 的元素，返回移除后数组的新长度。
+不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。
+元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。
+```
+
+```
+给定 nums = [3,2,2,3], val = 3,
+
+函数应该返回新的长度 2, 并且 nums 中的前两个元素均为 2。
+
+你不需要考虑数组中超出新长度后面的元素。
+```
+
+```
+给定 nums = [0,1,2,2,3,0,4,2], val = 2,
+
+函数应该返回新的长度 5, 并且 nums 中的前五个元素为 0, 1, 3, 0, 4。
+
+注意这五个元素可为任意顺序。
+
+你不需要考虑数组中超出新长度后面的元素。
+```
+
+```
+// nums 是以“引用”方式传递的。也就是说，不对实参作任何拷贝
+int len = removeElement(nums, val);
+// 在函数里修改输入数组对于调用者是可见的。
+// 根据你的函数返回的长度, 它会打印出数组中该长度范围内的所有元素。
+for (int i = 0; i < len; i++) {
+    print(nums[i]);
+}
+```
+
+
+
+#### 自实现
+
+```java
+public int removeElement(int[] nums, int val) {
+    	//如果数组中没有元素或者数组中只有一个元素且元素是要删除的元素，返回0
+		if(nums.length<=0 || (nums.length==1 && nums[0]==val)) {
+			return 0;
+		}
+		int res=0;//记录复合条件的元素个数
+		int preres=0;//记录排序后待删除元素之前元素的个数
+		int head=0;
+    	//先对给定的数组进行从小到大排序
+		for(int i=0;i<nums.length-1;i++) {
+			for(int j=i+1;j<nums.length;j++) {
+				if(nums[i]>nums[j]) {
+					int merge=nums[i];
+					nums[i]=nums[j];
+					nums[j]=merge;
+				}
+			}
+		}
+    	//查找要删除元素在数组中的第一个位置，赋值给head
+		for(int i=0;i<nums.length;i++) {
+			if(nums[i]==val) {
+				head=i;
+				preres=i;
+				break;
+			}
+		}
+    	//从head索引开始，把后边不需要删除的元素前移
+		for(int i=head;i<nums.length;i++) {
+			if(nums[i]!=val) {
+				int merge=nums[head];
+				nums[head]=nums[i];
+				nums[i]=merge;
+				res++;
+				head++;
+			}
+		}
+		return res+preres;
+        
+    }
+```
+
+
+
+#### 方法一
+
+```java
+public int removeElement(int[] nums, int val) {
+    int i = 0;
+    for (int j = 0; j < nums.length; j++) {
+        if (nums[j] != val) {
+            nums[i] = nums[j];
+            i++;
+        }
+    }
+    return i;
+}
+/*
+我们可以保留两个指针 i 和 j，其中 i 是慢指针，j 是快指针。
+当nums[j] 与给定的值相等时，递增j以跳过该元素。只要 nums[j]!=val，我们就复制nums[j]到nums[i] 并同时递增两个索引。重复这一过程，直到j到达数组的末尾，该数组的新长度为i。
+*/
+//时间复杂度：O(n)， 假设数组总共有n个元素，i和j至少遍历2n步。
+//空间复杂度：O(1)
+```
+
