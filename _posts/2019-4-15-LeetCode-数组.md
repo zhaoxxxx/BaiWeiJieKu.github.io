@@ -258,3 +258,47 @@ public int removeElement(int[] nums, int val) {
 //空间复杂度：O(1)
 ```
 
+
+
+### 插入位置
+
+```
+给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
+你可以假设数组中无重复元素。
+```
+
+```
+输入: [1,3,5,6], 5
+输出: 2
+
+输入: [1,3,5,6], 2
+输出: 1
+
+输入: [1,3,5,6], 7
+输出: 4
+
+输入: [1,3,5,6], 0
+输出: 0
+```
+
+```java
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        //遍历数组，如果有目标值，返回索引位置
+        for(int i=0;i<nums.length;i++) {
+            if(nums[i]==target)
+                return i;
+        }
+        //如果数组中没有目标值
+        for(int j=0;j<nums.length;j++) {
+            //如果J位置的元素大于目标值，那就应该把目标值放在J的位置
+            if(nums[j]>target) {
+                return j;
+            }
+        }
+        //否则把目标值放到最后
+        return nums.length;
+    }
+}
+```
+
