@@ -359,3 +359,58 @@ class Solution {
 复杂度为：O（n）
 ```
 
+
+
+### 加一
+
+```
+给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。
+
+最高位数字存放在数组的首位， 数组中每个元素只存储一个数字。
+
+你可以假设除了整数 0 之外，这个整数不会以零开头。
+```
+
+```
+输入: [1,2,3]
+输出: [1,2,4]
+解释: 输入数组表示数字 123。
+
+输入: [4,3,2,1]
+输出: [4,3,2,2]
+解释: 输入数组表示数字 4321。
+```
+
+```java
+class Solution {
+    public int[] plusOne(int[] digits) {
+        //数组最后一位数执行加一操作
+		digits[digits.length-1]=digits[digits.length-1]+1;
+        //从数组最后一位，也就是个位数开始，检测是否大于等于10了
+        for(int i=digits.length-1;i>=0;i--) {
+            //如果是最高位的数大于等于10
+        	if(i==0 && digits[i]>=10) {
+                //把当前位重置为零
+        		digits[i]=0;
+                //新建一个比原来数组容积大一的新数组
+        		int[] newdigits=new int[digits.length+1];
+                //新数组的最高位为1
+        		newdigits[0]=1;
+                //把旧数组的元素转移到新数组，从新数组的第二个位置开始
+        		for(int j=0;j<digits.length;j++) {
+        			newdigits[j+1]=digits[j];
+        		}
+                //返回新数组
+        		return newdigits;
+        	}//如果不是最高位大于等于10
+        	else if(digits[i]>=10 && i!=0) {
+                //把当前位数字重置为零，高一位的数字执行加一操作
+        		digits[i]=0;
+        		digits[i-1]++;
+        	}
+        }
+		return digits;
+    }
+}
+```
+
