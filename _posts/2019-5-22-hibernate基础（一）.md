@@ -495,6 +495,126 @@ sessionFactory=cfg.buildSessionFactory(serviceRegistey);
 - 把对象从 Session 缓存中删除, 该对象进入删除状态
 - Hibernate 的 cfg.xml 配置文件中有一个 **hibernate.use_identifier_rollback** 属性, 其默认值为 false, 若把它设为 true, 将改变 delete() 方法的运行行为: delete() 方法会把持久化对象或游离对象的 OID 设置为 null, 使它们变为临时对象
 
+
+
+### Query接口
+
+- query接口是hibernate的查询接口，用于向数据库中查询对象，并控制执行查询的过程。
+- query中包装了一个HQL查询语句
+
+
+
+#### 使用步骤
+
+- 通过session实例的createQuery方法创建一个query实例
+- 设置动态参数，使用setter方法
+- 执行查询语句
+
+
+
+#### 常用方法
+
+- **setter方法**：设置查询语句中的参数，针对不同的数据类型需要用到不同的setter方法
+- **list方法**：用于执行查询语句，并将查询结果以list的形式返回
+- **iterator方法**：用于查询语句，返回结果是一个iterator对象，在读取时只能按照顺序方式读取
+- **uniqueResult方法**：用于返回唯一的结果，在确保最多只有一条记录的情况下可以使用该方法。返回的结果可以直接转换为相应的对象
+- **executeUpdate方法**：支持HQL语句的更新和删除操作，建议更新时采用此方法
+- **setFirstResult方法**：可以设置所获得的第一条记录的位置，从0开始计算，用于筛选选取记录的范围。
+- **setMaxResults方法**：设置结果集的最大记录数，可以和setFirstResult结合使用，限制结果集的范围，实现分页功能
+
+```java
+Query query=session.createQuery("from User");
+int currentPage=1;
+int pageSize=10;
+query.setFirstResult( (currentPage-1)*pageSize);
+query.setMaxResults(pageSize);
+List Users=query.list();
+session.close();
+```
+
+
+
+### Criteria接口
+
+- 也是查询接口，它允许创建并执行面向对象方式的查询
+- 更擅长执行动态查询
+
+
+
+#### 常用类
+
+- Criteria：表示一次查询
+- Criterion：表示一个查询条件，可以通过Restrictions工具类来创建
+- Restriction：表示查询条件的工具类。提供了大量的静态方法，如eq（等于）、ge（大于等于）、between
+
+
+
+#### 使用步骤
+
+- 利用session实例的createCriteria方法创建一个实例
+- 设定查询条件，通过Expression类或Restrictions类创建查询条件的实例，即Criterion实例
+- 调用Criteria的list（）方法来执行查询语句
+
+```java
+List users=session.createCriteria(User.class).add(Restrictions.eq("name","jack")).list();
+/*
+在运行时，转化为：
+select * from user where name="jack";
+*/
+```
+
+
+
+#### 常用方法
+
+- add方法：设置查询条件，可以追加任意个add方法
+- addOrder方法：设置查询结果集的排序规则，相当于sql的order by语句，参数为Order类的实例
+
+```java
+List users=session.createCriteria(User.class)
+	.add(Restrictions.eq("name","jack"))
+	.addOrder(Order.asc("name"))
+	.list();
+```
+
+- createCriteria方法：提供了对多表查询的方法
+
+```java
+List users=session.createCriteria(User.class)
+	.add(Restrictions.eq("name","jack"))
+	.createCriteria("role")
+	.add(Restrictions.eq("rolename","admin"))
+	.list();
+/*
+select * from user,role where name="jack" and rolename="admin"
+*/
+```
+
+- list方法：执行数据查询，并将查询结果返回
+- scroll方法：与list方法类似，将结果集以ScrollableResults类型返回
+- setFetchModel方法：设置抓取策略
+- setFetchSize方法：指定一次从数据库中提取数据的数量大小，通过调用Statement.setFetchSize()方法实现
+- setMaxResults方法：用于设置从数据库中取得记录的最大行数，实现分页功能时将每页显示数据的数目作为参数传入该方法即可
+- setFirstResult方法：设置所获取带的第一个记录的位置，从0开始，用于分页查询
+- setProjection方法：主完成一些聚合查询和分组查询。
+
+```java
+List users=session.createCriteria(User.class)
+	.setProjection(Projections.projectionList()
+		.add(Projections.rowCount())
+		.add(Projections.avg("age"))
+		.add(Projections.max("age"))
+		.ad(Projections.min("age"))
+		.add(Projections.groupProperty("sex"))
+	).list();
+	
+/*
+select sex,count(*),avg(age),max(age),min(age) from user group by sex
+*/
+```
+
+- uniqueResult方法：可以得到唯一的查询结果，该结果为一个对象
+
 ### Transaction
 
 - 代表一次原子操作，它具有数据库事务的概念
