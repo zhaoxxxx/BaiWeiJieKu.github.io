@@ -155,7 +155,7 @@ if (appContext.containsBean(beanName)) {
 
 ### dao
 
-```
+```java
 package com.ssh.dao;
  
 import org.springframework.stereotype.Repository;
@@ -174,7 +174,7 @@ public class UserDao {
 
 ### service
 
-```
+```java
 package com.ssh.service;
  
 import javax.annotation.Resource;
@@ -208,7 +208,7 @@ public class UserService {
 
 ### action
 
-```
+```java
 package com.ssh.action;
  
 import org.springframework.beans.factory.annotation.Autowired;
